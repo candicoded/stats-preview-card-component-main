@@ -18,7 +18,7 @@
 
 body {
   font-size: 15px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   background-color: var(--main-background);
   display: flex;
   justify-content: center;
@@ -34,7 +34,7 @@ main {
 }
 
 .card-text {
-  padding: 2em; 
+  padding: 2em;
   display: flex;
   flex-direction: column;
   gap: 1em;
@@ -44,7 +44,7 @@ main {
   position: relative;
 }
 
-.mobile-img {
+.hero-img {
   width: 100%;
   border-radius: 0.5em 0.5em 0 0;
   display: block;
@@ -81,7 +81,7 @@ p {
 .stat-heading {
   color: var(--stat-headings);
   text-transform: uppercase;
-  font-family: 'Lexend Deca', sans-serif;
+  font-family: "Lexend Deca", sans-serif;
   font-size: 0.8rem;
   opacity: 0.7;
 }
@@ -97,4 +97,31 @@ footer {
   left: 0;
   color: white;
   width: 100%;
+}
+
+@media screen and (min-width: 1440px) {
+
+  main {
+    width: 50%;
+    display: flex;
+    text-align: left;
+  }
+
+  .hero-img {
+    width: 100%;
+    border-radius: 0.5em 0 0 0.5em;
+  }
+
+  .overlay {
+    border-radius: 0.5em 0 0 0.5em;
+  }
+
+  /* .card-text {
+    width: 30%;
+  } */
+
+  .desktop-stat-row {
+    display: flex;
+    justify-content: space-between;
+  }
 }
