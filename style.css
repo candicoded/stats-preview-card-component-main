@@ -40,12 +40,16 @@ main {
   gap: 1em;
 }
 
+.stat-info {
+  margin-bottom: 1em;
+}
+
 .img-container {
   position: relative;
 }
 
 .hero-img {
-  width: 100%;
+  max-width: 100%;
   border-radius: 0.5em 0.5em 0 0;
   display: block;
 }
@@ -102,26 +106,37 @@ footer {
 @media screen and (min-width: 1440px) {
 
   main {
-    width: 50%;
+    width: 80%;
     display: flex;
     text-align: left;
   }
 
   .hero-img {
     width: 100%;
-    border-radius: 0.5em 0 0 0.5em;
+    border-radius: 0 0.5em 0.5em 0;
   }
 
   .overlay {
-    border-radius: 0.5em 0 0 0.5em;
+    border-radius: 0 0.5em 0.5em 0;
   }
 
-  /* .card-text {
-    width: 30%;
-  } */
+  .img-container {
+    order: 1;
+  }
+
+  .card-text {
+    width: 50%;
+    padding: 4em 10em 4em 4em;
+  }
 
   .desktop-stat-row {
     display: flex;
     justify-content: space-between;
+    margin-top: 2em;
   }
+
+  .stat-info {
+    margin-bottom: 0;
+  }
+  
 }
